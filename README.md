@@ -1,7 +1,7 @@
 # Custom Image Classifier
 
 A simple **Convolutional Neural Network (CNN)** model built with **TensorFlow** and deployed using **Streamlit**. This project allows users to upload an image and classify it into predefined categories only!!!
-
+Before this you have to make sure the ide environment
 
 ---
 
