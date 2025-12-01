@@ -34,7 +34,8 @@ This project demonstrates how to build a CNN to classify images into multiple ca
 ## Requirements
 
 - Python 3.8+
-- TensorFlow
+- TensorFlow![Uploading tabby_cat.png…]()
+
 - Streamlit
 - Pillow (PIL)
 - NumPy
