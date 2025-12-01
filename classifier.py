@@ -9,7 +9,7 @@ test_dir = "dataset/test"
 batch_size = 16
 img_size = (64, 64)
 
-train_dataset = tf.keras.utils.image_dataset_from_directory(  #make image size 
+train_dataset = tf.keras.utils.image_dataset_from_directory(          #make image size 
     train_dir,
     image_size=img_size,
     batch_size=batch_size
@@ -35,12 +35,12 @@ model = models.Sequential([                  # Define the Sequential Convolution
     layers.Dense(len(class_names), activation='softmax')
 ])
 
-model.compile(optimizer='adam',
+model.compile(optimizer='adam',                             #Compile 
               loss='sparse_categorical_crossentropy',
               metrics=['accuracy'])
 
 model.fit(train_dataset, epochs=10, validation_data=test_dataset)
-model.save("custom_cnn_model.h5")
+model.save("custom_cnn_model.h5")        # Save the trained model
 
 st.title("Custom Image Classifier")
 st.write("Hello! Upload an image below")
